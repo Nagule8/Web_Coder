@@ -6,31 +6,29 @@
 
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" >
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" 
-        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <section class="header">
             <nav>
-                <a href="#">
+                <a href="#" class="logo">
                     <h2> <span class="yellow">WEB</span>  
                         <span class="white">PROGRAMMER</span>
                     </h2>
                 </a>
-                <span class="slogan">Just another wordpress site</span>
+                <span class="slogan">Just another WordPress site</span>
 
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="" class="li-color">Home</a></li>
-                        <li><a href="" class="li-color">About</a></li>
-                        <li><a href="" class="li-color">Pages</a></li>
-                        <li><a href="" class="li-color">RTL Tested</a></li>
-                        <li><a href="" class="li-color">Blogs</a></li>
-                        <li><a href="" class="li-color">Contact Us</a></li>
+                        <li><a href="#" class="li-color li-border li-line" style="color: #fdd912;">Home</a></li>
+                        <li><a href="#About" class="li-color li-border li-line">About Us</a></li>
+                        <li><a href="" class="li-color li-border li-line">Pages</a></li>
+                        <li><a href="" class="li-color li-border li-line">RTL Tested</a></li>
+                        <li><a href="#wid" class="li-color li-border li-line">Blogs</a></li>
+                        <li><a href="#wid" class="li-color li-border">Contact Us</a></li>
                     </ul>
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -39,24 +37,28 @@
             <div class="text-head">
                 <h1 class="white coder">CODER</h1>
                 <h3 class="yellow ctb">CODE TO BRING IDEAS TO LIFE</h3>
-                <button class="btn">HIRE ME</button>
+                <div class="button">
+                    <button class="btn">HIRE ME</button>
+                </div>
             </div>
         </section>
 
-        <section class="presentation">
+        <section class="presentation" id="About">
+            <div class="manModel">
+                <img src="img/ManModel.png" alt="">
+            </div>
             <div class="introduction">
-                <div class="manModel">
-                    <img src="img/ManModel.png" alt="">
-                </div>
+                
                 <div class="resume">
-                    <h2 style=" font-weight:bold; color: #282828; font-size: 65px; margin-bottom: 30px; text-align: left;">
-                        I'm Jonathan Doe,<small style=" font-weight:lighter; color:#282828; font-size:35px;margin-top: 1px;"> 
-                        Web Designer & Web Developer</small>
-                    </h2>
-                    <p style="font-size: 13px; font-stretch: condensed; text-align: justify;">
-                        Aliquam aliquam luctus nunc, in interdum enim dictum a. Fusce condimentum ipsum quis 
-                        aliquet convallis. Sed tempor nibh ac dui finibus rutrum bibendum nec eros. Nam malesuada consequat purus, 
-                        quis malesuada sapien porttitor eu.
+                    <div class="name-style">
+                        <h2>
+                            I'm Jonathan Doe,<small> 
+                            Web Designer & Web Developer</small>
+                        </h2>
+                    </div>
+                    <p>
+                        Aliquam aliquam luctus nunc, in interdum enim dictum a. Fusce condimentum ipsum quis aliquet convallis. Sed tempor
+                        nibh ac dui finibus rutrum bibendum nec eros. Nam malesuada consequat purus, quis malesuada sapien porttitor eu.
                     </p>
                     <ul class="info-list-1">
                         <li><strong>Full Name : </strong>Jonathan Doe</li>
@@ -67,26 +69,31 @@
                         <li><strong>Job Roll  : </strong>Web Programmer</li>
                         <li><strong>Skype     : </strong>Jonathan_Doe</li>
                     </ul>
-                    <button class="cta-select"><a href="#">Download Resume</a></button>
+                    <button class="cta-select"><a href="#">DOWNLOAD RESUME</a></button>
                 </div>
             </div>
             
         </section>
 
-        <section class="wwd">
+        <section class="wwd" id="wid">
 
             <h2>What I Do</h2>
+
             <div class="tab-row-coloumn">
 
                 <div class="box-rc">
-                    <div class="round">
-                        A
-                    </div>
-
-                    <h3>UI/UX Design</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla convallis.</p>
+                    <a class="box-link" href="#"></a>
+                        <div class="round">
+                            A
+                        </div>
+    
+                        <h3>UI/UX Design</h3>
+    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla convallis.</p>
                 </div>
+
                 <div class="box-cr">
+                    <a class="box-link" href="#"></a>
                     <div class="round">
                         B
                     </div>
@@ -94,7 +101,9 @@
                     <h3>UI/UX Design</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla convallis.</p>
                 </div>
+
                 <div class="box-rc">
+                    <a class="box-link" href="#"></a>
                     <div class="round">
                         C
                     </div>
@@ -102,7 +111,9 @@
                     <h3>UI/UX Design</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla convallis.</p>
                 </div>
+
                 <div class="box-cr">
+                    <a class="box-link" href="#"></a>
                     <div class="round">
                         D
                     </div>
@@ -110,7 +121,9 @@
                     <h3>UI/UX Design</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla convallis.</p>
                 </div>
+
                 <div class="box-rc">
+                    <a class="box-link" href="#"></a>
                     <div class="round">
                         E
                     </div>
@@ -118,16 +131,15 @@
                     <h3>UI/UX Design</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla convallis.</p>
                 </div>
+
                 <div class="box-cr">
+                    <a class="box-link" href="#"></a>
                     <div class="round">
                         F
                     </div>
-
                     <h3>UI/UX Design</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit nulla convallis.</p>
                 </div>
-
-
 
             </div>
         </section>
@@ -142,14 +154,14 @@
                 navLinks.style.right="-200px";
             }   
             function changeBg(){
-                const images = ['url("img/slider1.jpg")','url("img/slider2.jpg")','url("img/slider3.jpg")']
+                const images = ['url("img/slider2.jpg")','url("img/slider3.jpg")','url("img/slider1.jpg")']
                 
                 const section = document.querySelector('section')
                 const bg = images[Math.floor(Math.random()*images.length)]
                 
                 section.style.backgroundImage = bg
             }
-            setInterval(changeBg,2000)         
+            setInterval(changeBg,2500)         
         </script>
 
     </body>
